@@ -55,5 +55,3 @@ The browser calls `/api/chat`; only `server.js` talks to OpenAI.
 <img width="1917" height="918" alt="image" src="https://github.com/user-attachments/assets/d48a9f7c-d4d1-4ff4-a056-1ffdc08cb472" />
 - AI Campus Assistant
 <img width="543" height="892" alt="image" src="https://github.com/user-attachments/assets/586d2b74-b22a-446c-bdc5-c27e9db37a2c" />
-
-- Chat history in the current browser session
