@@ -34,6 +34,7 @@ The browser calls `/api/chat`; only `server.js` talks to OpenAI.
 
 ## Features
 - Student dashboard
+  <img width="1917" height="1078" alt="image" src="https://github.com/user-attachments/assets/13c84d6e-d6a0-4632-984e-29fdd34bb425" />
 - Academics
 - Attendance
 - Results
