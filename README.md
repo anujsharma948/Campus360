@@ -34,27 +34,26 @@ The browser calls `/api/chat`; only `server.js` talks to OpenAI.
 
 ## Features
 - Student dashboard
-- <img width="1917" height="1078" alt="image" src="https://github.com/user-attachments/assets/13c84d6e-d6a0-4632-984e-29fdd34bb425" />
+<img width="1917" height="927" alt="image" src="https://github.com/user-attachments/assets/0690267a-95b4-497c-b575-a3efd6510948" />
 - Academics
-<img width="1917" height="918" alt="image" src="https://github.com/user-attachments/assets/cb66bd30-d2ae-4c20-ac55-bc3831599d27" />
+<img width="1917" height="916" alt="image" src="https://github.com/user-attachments/assets/ebdd575c-bf5e-4c0f-930a-560dbcd19db7" />
 - Attendance
-<img width="1917" height="915" alt="image" src="https://github.com/user-attachments/assets/602f4f84-e52c-4ecd-914a-69d612f250a8" />
+<img width="1917" height="917" alt="image" src="https://github.com/user-attachments/assets/af60d7e2-9888-4327-8050-bc081b7b8692" />
 - Results
-<img width="1917" height="920" alt="image" src="https://github.com/user-attachments/assets/ae5eef48-daf2-4627-9a53-cd502af4c28f" />
+<img width="1917" height="917" alt="image" src="https://github.com/user-attachments/assets/ef0f781f-716c-452a-a26f-de5fc252f637" />
 - Timetable
-<img width="1917" height="917" alt="image" src="https://github.com/user-attachments/assets/7ac4990a-92ea-4903-ad9d-e690654382ba" />
+<img width="1917" height="922" alt="image" src="https://github.com/user-attachments/assets/497aa45b-2611-42c3-96cd-04ef19c8313f" />
 - Placement tracker
-<img width="1917" height="915" alt="image" src="https://github.com/user-attachments/assets/a4acd31b-305a-4fb1-9080-ecc9d78ad531" />
+<img width="1917" height="917" alt="image" src="https://github.com/user-attachments/assets/0426038c-6823-4c41-977f-b157781037a1" />
 - Skills
-- <img width="1917" height="916" alt="image" src="https://github.com/user-attachments/assets/b2ba25c6-cb9b-4e54-a37c-87a4fbb08ef5" />
+<img width="1917" height="921" alt="image" src="https://github.com/user-attachments/assets/da8ba137-70f8-4816-8f5d-8fb64f42ef7b" />
 - Events
-- <img width="1917" height="917" alt="image" src="https://github.com/user-attachments/assets/68339186-05fa-4930-b2cd-188c01b5042f" />
+<img width="1917" height="925" alt="image" src="https://github.com/user-attachments/assets/b3c6fca5-c5df-4df4-80a9-64ddb6e8940b" />
 - Notices
-- <img width="1917" height="916" alt="image" src="https://github.com/user-attachments/assets/f9a52e78-813a-4680-aa91-c0c9273b8af5" />
+<img width="1917" height="917" alt="image" src="https://github.com/user-attachments/assets/09a2d45d-7121-4ede-8eb7-2f7b02193c1d" />
 - Profile
-- <img width="1917" height="922" alt="image" src="https://github.com/user-attachments/assets/061995cd-ac56-45c6-b60f-09c2cf33cfa8" />
-- LocalStorage applications
-- 
+<img width="1917" height="918" alt="image" src="https://github.com/user-attachments/assets/d48a9f7c-d4d1-4ff4-a056-1ffdc08cb472" />
 - AI Campus Assistant
-- AI receives the current Campus360 student data
+<img width="543" height="892" alt="image" src="https://github.com/user-attachments/assets/586d2b74-b22a-446c-bdc5-c27e9db37a2c" />
+
 - Chat history in the current browser session
