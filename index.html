@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Campus360 | AI Student Portal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+<aside class="sidebar" id="sidebar">
+  <div class="logo"><div class="logo-icon">C</div><div><h2>Campus<span>360</span></h2><small>AI Student Portal</small></div></div>
+  <nav>
+    <p class="nav-title">MAIN</p>
+    <button class="nav-item active" data-page="dashboard">⌂ <span>Dashboard</span></button>
+    <button class="nav-item" data-page="academics">▣ <span>Academics</span></button>
+    <button class="nav-item" data-page="attendance">◷ <span>Attendance</span></button>
+    <button class="nav-item" data-page="results">▤ <span>Results</span></button>
+    <button class="nav-item" data-page="timetable">▦ <span>Timetable</span></button>
+    <p class="nav-title">CAREER</p>
+    <button class="nav-item" data-page="placements">◉ <span>Placements</span></button>
+    <button class="nav-item" data-page="skills">◆ <span>Skills</span></button>
+    <p class="nav-title">CAMPUS</p>
+    <button class="nav-item" data-page="events">◈ <span>Events</span></button>
+    <button class="nav-item" data-page="notices">! <span>Notices</span></button>
+    <button class="nav-item" data-page="profile">○ <span>Profile</span></button>
+  </nav>
+  <div class="sidebar-bottom"><div class="help-box">?<div><b>Need Help?</b><small>Ask Campus360 AI</small></div></div></div>
+</aside>
+
+<main class="main">
+<header class="topbar">
+  <button class="mobile-menu" id="mobileMenu">☰</button>
+  <div class="search"><span>⌕</span><input id="globalSearch" placeholder="Search Campus360..."></div>
+  <div class="top-actions">
+    <button class="icon-btn" id="notificationBtn">🔔<i></i></button>
+    <div class="profile-mini"><div class="avatar">AS</div><div><b>Anuj Sharma</b><small>MCA • Semester 1</small></div></div>
+  </div>
+</header>
+
+<section class="content">
+
+<div class="page active-page" id="dashboard">
+  <div class="welcome"><div><p class="eyebrow">THURSDAY, OCTOBER 8, 2026</p><h1>Good morning, Anuj! 👋</h1><p>Welcome to your intelligent campus dashboard.</p></div><button class="primary" onclick="showPage('timetable')">View Schedule →</button></div>
+  <div class="stats">
+    <div class="stat"><div class="ico blue">▤</div><div><span>Current CGPA</span><b>8.42</b><small class="good">↑ 0.24 this semester</small></div></div>
+    <div class="stat"><div class="ico green">◷</div><div><span>Attendance</span><b>86.4%</b><small class="good">↑ 2.1% this month</small></div></div>
+    <div class="stat"><div class="ico purple">◆</div><div><span>Skills Completed</span><b>12</b><small>4 in progress</small></div></div>
+    <div class="stat"><div class="ico orange">◉</div><div><span>Placement Ready</span><b>78%</b><small>Career preparation</small></div></div>
+  </div>
+
+  <div class="grid2">
+    <div class="card"><div class="card-head"><div><h3>Attendance Overview</h3><small>Current semester</small></div><button class="link" onclick="showPage('attendance')">View all →</button></div>
+      <div class="attendance"><div class="donut"><div><b>86%</b><small>Overall</small></div></div>
+      <div class="subject-bars">
+        <label>Web Technology <b>92%</b></label><div class="bar"><i style="width:92%"></i></div>
+        <label>Advanced DSA <b>88%</b></label><div class="bar"><i style="width:88%"></i></div>
+        <label>Information Security <b>84%</b></label><div class="bar"><i style="width:84%"></i></div>
+        <label>Salesforce <b>81%</b></label><div class="bar"><i style="width:81%"></i></div>
+      </div></div>
+    </div>
+    <div class="card"><div class="card-head"><div><h3>Today's Schedule</h3><small>October 8, Thursday</small></div><button class="link" onclick="showPage('timetable')">Full schedule →</button></div>
+      <div class="schedule">
+        <div class="schedule-row current"><time>09:00</time><div><b>Web Technology</b><small>Room 204 • Dr. Mehta</small></div><em>LIVE</em></div>
+        <div class="schedule-row"><time>11:00</time><div><b>Advanced DSA</b><small>Lab 3 • Prof. Sharma</small></div></div>
+        <div class="schedule-row"><time>14:00</time><div><b>Information Security</b><small>Room 106 • Dr. Kapoor</small></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid2">
+    <div class="card"><div class="card-head"><div><h3>Placement Preparation</h3><small>Career readiness</small></div><button class="link" onclick="showPage('placements')">Details →</button></div>
+      <div class="placement"><div class="ring"><b>78%</b><small>Ready</small></div><div class="mini-stats"><div>DSA <b>82%</b></div><div>Technical <b>76%</b></div><div>Aptitude <b>91%</b></div><div>Interview <b>64%</b></div></div></div>
+    </div>
+    <div class="card"><div class="card-head"><div><h3>Upcoming Events</h3><small>Don't miss out</small></div><button class="link" onclick="showPage('events')">See all →</button></div>
+      <div class="event-mini"><strong>12<small>OCT</small></strong><div><b>Tech Symposium 2026</b><small>Auditorium • 10:00 AM</small></div></div>
+      <div class="event-mini"><strong>16<small>OCT</small></strong><div><b>Hackathon 3.0</b><small>Innovation Lab • 9:00 AM</small></div></div>
+      <div class="event-mini"><strong>21<small>OCT</small></strong><div><b>Placement Drive</b><small>Seminar Hall • 11:00 AM</small></div></div>
+    </div>
+  </div>
+</div>
+
+<div class="page" id="academics">
+  <div class="heading"><div><p class="eyebrow">ACADEMICS</p><h1>Academic Overview</h1><p>Subjects, faculty, credits and performance.</p></div></div>
+  <div class="stats">
+    <div class="stat"><div class="ico blue">▣</div><div><span>Total Subjects</span><b>6</b><small>This semester</small></div></div>
+    <div class="stat"><div class="ico green">✓</div><div><span>Assignments</span><b>18</b><small>15 completed</small></div></div>
+    <div class="stat"><div class="ico purple">★</div><div><span>Average Score</span><b>84%</b><small>Good performance</small></div></div>
+    <div class="stat"><div class="ico orange">⌛</div><div><span>Credits</span><b>24</b><small>Current semester</small></div></div>
+  </div>
+  <div class="card table-card"><div class="card-head"><div><h3>Current Subjects</h3><small>Semester 1 • MCA</small></div></div>
+  <table><thead><tr><th>Subject</th><th>Faculty</th><th>Credits</th><th>Attendance</th><th>Grade</th><th>Performance</th></tr></thead><tbody id="subjectTable"></tbody></table></div>
+</div>
+
+<div class="page" id="attendance">
+  <div class="heading"><div><p class="eyebrow">ACADEMICS</p><h1>Attendance</h1><p>Track your attendance subject-wise.</p></div></div>
+  <div class="attendance-page"><div class="card attendance-big"><div class="big-donut"><div><b>86.4%</b><small>Overall</small></div></div><h3>You're doing great!</h3><p>You're above the 75% required threshold.</p></div><div class="card table-card"><div class="card-head"><div><h3>Subject Breakdown</h3><small>Current semester</small></div></div><div id="attendanceList"></div></div></div>
+</div>
+
+<div class="page" id="results">
+  <div class="heading"><div><p class="eyebrow">ACADEMICS</p><h1>Results & Performance</h1><p>Semester-wise academic performance.</p></div><button class="primary" onclick="toast('Result document prepared!')">Download Result</button></div>
+  <div class="result-cards"><div class="card"><span>Current CGPA</span><b>8.42</b><small>Out of 10</small></div><div class="card"><span>Current SGPA</span><b>8.67</b><small>Semester 1</small></div><div class="card"><span>Credits Earned</span><b>24</b><small>Out of 24</small></div></div>
+  <div class="card table-card"><div class="card-head"><h3>Semester Results</h3></div><table><thead><tr><th>Semester</th><th>SGPA</th><th>Credits</th><th>Backlogs</th><th>Performance</th></tr></thead><tbody><tr><td><b>Semester 1</b></td><td>8.67</td><td>24</td><td>0</td><td><span class="pill green">Excellent</span></td></tr><tr><td><b>Semester 2</b></td><td>8.18</td><td>26</td><td>0</td><td><span class="pill blue">Good</span></td></tr><tr><td><b>Semester 3</b></td><td>7.94</td><td>24</td><td>0</td><td><span class="pill blue">Good</span></td></tr></tbody></table></div>
+</div>
+
+<div class="page" id="timetable">
+  <div class="heading"><div><p class="eyebrow">ACADEMICS</p><h1>Class Timetable</h1><p>Your weekly academic schedule.</p></div></div>
+  <div class="tabs"><button class="active">Monday</button><button>Tuesday</button><button>Wednesday</button><button>Thursday</button><button>Friday</button><button>Saturday</button></div>
+  <div class="card timeline">
+    <div><time>09:00 AM</time><article class="class blue-bg"><b>Web Technology</b><small>Room 204 • Dr. Mehta • 4 Credits</small></article></div>
+    <div><time>11:00 AM</time><article class="class purple-bg"><b>Advanced DSA</b><small>Lab 3 • Prof. Sharma • 4 Credits</small></article></div>
+    <div><time>01:00 PM</time><article class="break">Lunch Break</article></div>
+    <div><time>02:00 PM</time><article class="class green-bg"><b>Information Security</b><small>Room 106 • Dr. Kapoor • 4 Credits</small></article></div>
+    <div><time>04:00 PM</time><article class="class orange-bg"><b>Salesforce</b><small>Lab 2 • Mr. Verma • 3 Credits</small></article></div>
+  </div>
+</div>
+
+<div class="page" id="placements">
+  <div class="heading"><div><p class="eyebrow">CAREER</p><h1>Placement Hub</h1><p>Track opportunities and applications.</p></div><button class="primary" id="addApp">+ Add Application</button></div>
+  <div class="stats">
+    <div class="stat"><div class="ico blue">◉</div><div><span>Companies Visited</span><b>24</b><small>This year</small></div></div>
+    <div class="stat"><div class="ico green">✓</div><div><span>Applications</span><b id="appCount">4</b><small>Active</small></div></div>
+    <div class="stat"><div class="ico purple">★</div><div><span>Interviews</span><b>3</b><small>Upcoming</small></div></div>
+    <div class="stat"><div class="ico orange">₹</div><div><span>Highest Package</span><b>18 LPA</b><small>Current drive</small></div></div>
+  </div>
+  <div class="card table-card"><div class="card-head"><div><h3>My Applications</h3><small>Placement tracker</small></div><select id="appFilter"><option value="all">All</option><option>Applied</option><option>Interview</option><option>Selected</option><option>Rejected</option></select></div><table><thead><tr><th>Company</th><th>Role</th><th>Package</th><th>Date</th><th>Status</th><th>Action</th></tr></thead><tbody id="appTable"></tbody></table></div>
+</div>
+
+<div class="page" id="skills">
+  <div class="heading"><div><p class="eyebrow">CAREER</p><h1>Skills & Development</h1><p>Build and track your professional skill set.</p></div></div>
+  <div class="skill-grid" id="skillGrid"></div>
+</div>
+
+<div class="page" id="events">
+  <div class="heading"><div><p class="eyebrow">CAMPUS</p><h1>Campus Events</h1><p>Discover what's happening around campus.</p></div></div>
+  <div class="event-grid">
+    <div class="event-card"><div class="event-banner blue-banner"><span>OCT</span><b>12</b></div><div><label>TECHNOLOGY</label><h3>Tech Symposium 2026</h3><p>Emerging technologies, AI and the future of software development.</p><small>◷ 10:00 AM &nbsp; • &nbsp; ⌖ Auditorium</small><button onclick="registerEvent(this)">Register Now</button></div></div>
+    <div class="event-card"><div class="event-banner purple-banner"><span>OCT</span><b>16</b></div><div><label>COMPETITION</label><h3>Hackathon 3.0</h3><p>Build innovative solutions with developers across campus.</p><small>◷ 09:00 AM &nbsp; • &nbsp; ⌖ Innovation Lab</small><button onclick="registerEvent(this)">Register Now</button></div></div>
+    <div class="event-card"><div class="event-banner orange-banner"><span>OCT</span><b>21</b></div><div><label>PLACEMENT</label><h3>Placement Drive</h3><p>Meet recruiters and explore career opportunities.</p><small>◷ 11:00 AM &nbsp; • &nbsp; ⌖ Seminar Hall</small><button onclick="registerEvent(this)">Register Now</button></div></div>
+    <div class="event-card"><div class="event-banner green-banner"><span>OCT</span><b>25</b></div><div><label>CULTURAL</label><h3>Campus Fest</h3><p>Culture, music, creativity and student talent.</p><small>◷ 05:00 PM &nbsp; • &nbsp; ⌖ Main Ground</small><button onclick="registerEvent(this)">Register Now</button></div></div>
+  </div>
+</div>
+
+<div class="page" id="notices">
+  <div class="heading"><div><p class="eyebrow">CAMPUS</p><h1>Notices & Announcements</h1><p>Important campus updates.</p></div></div>
+  <div class="notice-list">
+    <div class="card notice"><b>!</b><div><label>IMPORTANT</label><h3>Mid-Semester Examination Schedule Released</h3><p>The examination schedule for Semester 1 has been published.</p><small>2 hours ago • Examination Cell</small></div></div>
+    <div class="card notice"><b>i</b><div><label>ACADEMIC</label><h3>Assignment Submission Deadline</h3><p>Web Technology submission deadline extended to October 12, 2026.</p><small>Yesterday • Department of Computer Applications</small></div></div>
+    <div class="card notice"><b>★</b><div><label>EVENT</label><h3>Registrations Open for Hackathon 3.0</h3><p>Register individually or as a team for the upcoming hackathon.</p><small>Oct 5 • Student Innovation Cell</small></div></div>
+    <div class="card notice"><b>✓</b><div><label>PLACEMENT</label><h3>Infosys Recruitment Results</h3><p>Selected students can collect their offer documentation.</p><small>Oct 3 • Training & Placement Cell</small></div></div>
+  </div>
+</div>
+
+<div class="page" id="profile">
+  <div class="heading"><div><p class="eyebrow">ACCOUNT</p><h1>My Profile</h1><p>Your registered student information.</p></div></div>
+  <div class="profile-grid"><div class="card profile-card"><div class="cover"></div><div class="profile-avatar">AS</div><h2>Anuj Sharma</h2><p>MCA • Computer Applications</p><span class="badge">MCA2026-042</span><div class="profile-stats"><div><b>8.42</b><small>CGPA</small></div><div><b>86%</b><small>Attendance</small></div><div><b>12</b><small>Skills</small></div></div></div>
+  <div class="card table-card"><div class="card-head"><div><h3>Personal Information</h3><small>Student details</small></div></div><div class="details"><div><small>Full Name</small><b>Anuj Sharma</b></div><div><small>Student ID</small><b>MCA2026-042</b></div><div><small>Program</small><b>Master of Computer Applications</b></div><div><small>Semester</small><b>Semester 1</b></div><div><small>Email</small><b>anuj.student@example.com</b></div><div><small>Department</small><b>Computer Applications</b></div><div><small>Academic Year</small><b>2026–27</b></div><div><small>Status</small><b class="good">Active</b></div></div></div></div>
+</div>
+
+</section>
+</main>
+</div>
+
+<!-- AI CHAT -->
+<button class="ai-fab" id="aiFab"><span>✦</span><i>AI</i></button>
+<section class="ai-chat" id="aiChat">
+  <header><div class="ai-title"><div class="ai-logo">✦</div><div><b>Campus360 AI</b><small>Ask about your campus</small></div></div><button id="closeAi">×</button></header>
+  <div class="chat-messages" id="chatMessages">
+    <div class="msg bot"><div class="bubble">Hi Anuj! I'm your <b>Campus360 AI Assistant</b>. Ask me about your CGPA, attendance, timetable, results, placements, skills, events, notices or profile.</div></div>
+    <div class="suggestions">
+      <button>What is my CGPA?</button><button>Which subject has the lowest attendance?</button><button>What is my placement status?</button><button>What events are coming up?</button>
+    </div>
+  </div>
+  <form class="chat-input" id="chatForm"><input id="chatInput" autocomplete="off" placeholder="Ask Campus360 AI..."><button>➤</button></form>
+</section>
+
+<div class="modal" id="appModal"><div class="modal-box"><button class="close" id="closeModal">×</button><h2>Add Placement Application</h2><p>Save a new application to your Campus360 tracker.</p><form id="appForm"><input id="company" required placeholder="Company Name"><input id="role" required placeholder="Job Role"><input id="package" required placeholder="Package e.g. 8 LPA"><select id="status"><option>Applied</option><option>Interview</option><option>Selected</option><option>Rejected</option></select><button class="primary">Add Application</button></form></div></div>
+
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
